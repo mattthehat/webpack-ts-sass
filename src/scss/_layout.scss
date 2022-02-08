@@ -1,0 +1,28 @@
+body {
+    background: $primary;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    color: #fff;
+    font-size: 2.8vmin;
+}
+
+#app {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    svg {
+        width: 230px;
+        margin: 24px 0;
+        animation: spin 25s forwards infinite linear;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
